@@ -5,7 +5,8 @@ from pathlib import Path
 import httpx
 
 from linkedin_jobs.config import Settings
-from linkedin_jobs.scrape import CSV_COLUMNS, GuestBlocked, execute_run, fetch_text
+from linkedin_jobs.scrape import CSV_COLUMNS, execute_run, fetch_text
+from linkedin_jobs.scrape import GuestBlocked
 
 IST_NOON = datetime(2026, 11, 9, 12, 0, tzinfo=timezone.utc)  # 17:30 IST
 IST_NIGHT = datetime(2026, 11, 9, 20, 0, tzinfo=timezone.utc)  # 01:30 IST
