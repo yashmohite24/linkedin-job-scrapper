@@ -22,7 +22,7 @@ jobs:
       - uses: astral-sh/setup-uv@v5
         with:
           python-version: "3.12"
-      - run: uv sync --frozen
+      - run: uv sync
       - run: uv run python -m linkedin_jobs run
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
